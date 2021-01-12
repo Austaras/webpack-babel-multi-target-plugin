@@ -106,14 +106,12 @@ module.exports = (workingDir, examples, options = {}) => ({
       //     debug: true,
       //   },
       // },
-      // targets: {
-      //   modern: true,
-      //   legacy: {
-      //     additionalModules: [
-      //       '../_shared/hello.js',
-      //     ],
-      //   },
-      // },
+      targets: {
+        modern: true,
+        legacy: {
+          tagAssetsWithKey: true,
+        }
+      },
     }),
 
     // new HtmlWebpackIncludeAssetsPlugin({
